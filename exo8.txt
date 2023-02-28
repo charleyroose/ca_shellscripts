@@ -1,0 +1,8 @@
+for N in ${NUMBERS[@]} ; do
+  if [ $(($N % 2)) = 0 ] ; then
+    echo "$N"
+  fi  
+  if [ $N -eq 237 ] ; then
+    break
+  fi
+done 
