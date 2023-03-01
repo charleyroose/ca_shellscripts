@@ -1,0 +1,23 @@
+	#!/bin/bash
+	# enter your array comparison code here
+a=(3 5 8 10 6)
+b=(6 5 4 12)
+c=(14 7 5 7)
+
+for x in ${a[@]} ; do
+	for y in ${b[@]} ; do
+    	if [ $x -eq $y ]; then
+        	z[${#z[@]}]=$x
+        fi    
+	done
+done
+	
+for s in ${c[@]} ; do
+	for q in ${z[@]} ; do
+    	if [ $s -eq $q ]; then
+        	r[${#r[@]}]=$s
+        fi
+    done
+done
+
+echo $r
